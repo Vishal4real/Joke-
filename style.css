@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Ubuntu:wght@500&display=swap');/* */
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333333;
+}
+.Heading{
+    margin-top: 29px;
+    font-family: 'Lemon', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #EDF2F4;
+}
+.Heading span{
+    color: red;
+    text-transform: uppercase;
+}
+@media (max-width:630px) {
+    .Heading{
+        font-size: 1.2rem;
+    }
+}
+.Heading::after{
+    content: '😲';
+}
+.main-container{
+    display: flex;
+    margin-top: 35px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.main-container select,label{
+    background: none;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.type-contanier{
+    border: 2px solid #000;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    background-color: #717EC3;
+    -webkit-box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+    -moz-box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+    box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+}
+@media (max-width:400px) {
+    .type-contanier{
+        padding: 10px;
+    }
+    .Heading{
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+button{
+    height: 58px;
+    width: 120px;
+    background-color: #717EC3;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    -webkit-box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+    -moz-box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+    box-shadow: -3px -5px 59px 0px rgba(113,126,195,1);
+}
+button:hover{
+    background-color: #5e6ebf;
+}
+@media (max-width:630px) {
+    button{
+        display: block;
+    }
+}
+
+@media (max-width:400px){
+    button{
+        height: 38px;
+        width: 90px;
+    }
+}
+
+#slj,#dlj{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 200px;
+}
+#slj .msg , #dlj .msg{
+    border: 2px solid white;
+    padding: 20px;
+    background-color: #5e6ebf;
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+.msg{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.video{
+    height: 200px; 
+    width: 300px; 
+    border: 2px solid green;
+}

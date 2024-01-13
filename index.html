@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p class="Heading">When we laugh, it's a result of a <span>complex interaction</span> between our <span>brain</span>, <span>nervous system</span>, and <span>muscles</span>.</p>
+    <video autoplay="true" id="video" style="display: none;"></video>
+    <div class="main-container">
+        <div class="type-contanier">
+            <label for="select">Select Category :</label>
+            <select name="" id="selectopt">
+                <option value="Any">Any</option>
+                <option value="Programming" selected>Programming</option>
+                <option value="Misc">Misc</option>
+                <option value="Christmas">Christmas</option>
+                <option value="Dark">Dark</option>
+                <option value="Developers Choice">Developers Choice</option>
+            </select>  
+        </div>
+        <div class="btn">
+            <button onclick="myfun()">Generate!</button>
+        </div>
+    </div>
+    <div class="display-joke-single-line" id="slj" style="display: none;" >
+        <div class="msg">
+            <p></p>
+        </div>
+    </div>
+    <div class="display-joke-double-line" id="dlj"  style="display: none;">
+        <div class="msg">
+            <span class="setup"></span><br>
+            <span class="delivery"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
